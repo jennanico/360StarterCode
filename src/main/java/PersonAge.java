@@ -69,12 +69,24 @@ public class PersonAge {
 
 	@Override
 	public String toString() {
-		return "Person:" + firstName + " " + lastName + ", " + age;
+		return "Person: " + firstName + " " + lastName + ", " + age;
 	}
+	
+	
+	public PersonAge makePerson(PersonAge that) throws UnderAgeException {
+		if (age < 18 || that.age < 18) {
+			throw new UnderAgeException();
+		}
+		
+		PersonAge child = new PersonAge(this.firstName, that.lastName, 0);
+		return child;
+	}
+	
 	
 	public static void main(String[] args) {
 		PersonAge r = new PersonAge("Romeo", "Mon", 15);
 		System.out.println("R "+r);
+		
 	}
 
 
