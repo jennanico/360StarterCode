@@ -23,7 +23,9 @@ public class Payroll extends EmployeeFactory {
 	public int[] payEmployees() {
 		int[] weeklyPay = new int[payroll.size()];
 		
-		// Implementing later
+		for (int i = 0; i < payroll.size(); i++) {
+			weeklyPay[i] = payroll.get(i).calcPay();
+		}
 		
 		return weeklyPay;
 	}

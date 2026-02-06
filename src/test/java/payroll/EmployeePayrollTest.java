@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class EmployeeTest {
+class EmployeePayrollTest {
 	
 	ContractWorker A;
 	HourlyWorker B;
@@ -68,6 +68,31 @@ class EmployeeTest {
 		C.setHours(20);
 		pay = C.calcPay();
 		assertEquals(400, pay);
+	}
+	
+	@Test
+	void testCreateEmployee() {
+		
+	}
+	
+	@Test
+	void testPayroll() {
+		
+	}
+	
+	@Test
+	void testPayrollAdd() {
+		
+	}
+	
+	@Test
+	void testPayrollSet() {
+		
+	}
+	
+	@Test
+	void testPayrollPay() {
+		
 	}
 
 }
