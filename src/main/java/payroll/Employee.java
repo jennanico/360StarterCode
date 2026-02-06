@@ -9,4 +9,6 @@ abstract class Employee {
 	// To be overriden by child classes
 	abstract int calcPay(int hours);
 	
+	abstract void setHours();
+	
 }

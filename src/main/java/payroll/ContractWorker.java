@@ -8,4 +8,10 @@ public class ContractWorker extends Employee {
 		return 0;
 	}
 
+	@Override
+	void setHours() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
