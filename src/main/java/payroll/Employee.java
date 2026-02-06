@@ -1,14 +1,12 @@
 package payroll;
 
-public class Employee {
+abstract class Employee {
 	
 	String firstName;
 	String lastName;
 	int hoursWorked;
 	
 	// To be overriden by child classes
-	public int calcPay(int hours) {
-		return 0;
-	}
-
+	abstract int calcPay(int hours);
+	
 }
