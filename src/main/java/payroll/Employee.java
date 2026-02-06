@@ -13,7 +13,9 @@ abstract class Employee {
 	}
 	
 	public void setHours(int hours) {
-		this.hoursWorked = hours;
+		if (hours >= 0) {
+			this.hoursWorked = hours;
+		}
 	}
 	
 	// To be overriden by child classes.
