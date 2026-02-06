@@ -2,16 +2,13 @@ package payroll;
 
 public class SalaryWorker extends Employee {
 
-	@Override
-	int calcPay(int hours) {
-		// TODO Auto-generated method stub
-		return 0;
+	protected SalaryWorker(String fName, String lName) {
+		super(fName, lName);
 	}
 
 	@Override
-	void setHours() {
-		// TODO Auto-generated method stub
-		
+	int calcPay() {
+		return 40 * 10;
 	}
 
 }

@@ -4,11 +4,21 @@ abstract class Employee {
 	
 	String firstName;
 	String lastName;
-	int hoursWorked;
+	public int hoursWorked;
 	
-	// To be overriden by child classes
-	abstract int calcPay(int hours);
+	protected Employee(String fName, String lName) {
+		firstName = fName;
+		lastName = lName;
+		hoursWorked = 0;
+	}
 	
-	abstract void setHours();
+	public void setHours(int hours) {
+		this.hoursWorked = hours;
+	}
+	
+	// To be overriden by child classes.
+	// Assuming hourly pay is 10/hr.
+	abstract int calcPay();
+	
 	
 }
