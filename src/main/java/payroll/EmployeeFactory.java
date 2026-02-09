@@ -1,7 +1,11 @@
 package payroll;
 
 public class EmployeeFactory {
-	
+
+	public EmployeeFactory() {
+		super();
+	}
+
 	public Employee createEmployee(String fName, String lName, String workerType) {
 		Employee myWorker = null;
 		
