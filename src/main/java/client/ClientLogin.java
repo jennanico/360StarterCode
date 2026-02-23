@@ -3,17 +3,24 @@ package client;
 import org.springframework.web.client.RestClient;
 
 public class ClientLogin {
+		
+	public static void main(String[] args) {
+		
+		RestClient defaultClient = RestClient.create();
 	
-	RestClient defaultClient = RestClient.create();
-	
-	public void main(String[] args) {
-	
-		String result = defaultClient.get()
-							.uri("cs-hydra.centre.edu:9000")
-							.retrieve()
-							.body(String.class);
+		String password = defaultClient.get()
+								.uri("http://cs-hydra.centre.edu:9000/request/{username}", "jenna")
+								.retrieve()
+								.body(String.class);
 						
-		System.out.println(result);
+		System.out.println(password);
+		
+		String registerResult = defaultClient.get()
+									.uri("http://cs-hydra.centre.edu:9000/auth/jenna/{pw}", password)
+									.retrieve()
+									.body(String.class);
+		
+		System.out.println(registerResult);
 		
 	}
 
