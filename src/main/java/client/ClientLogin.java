@@ -8,7 +8,7 @@ public class ClientLogin {
 		
 		RestClient defaultClient = RestClient.create();
 		
-		String username = "jenna";
+		String username = "jennaa";
 	
 		String password = defaultClient.get()
 								.uri("http://cs-hydra.centre.edu:9000/request/{username}", username)
