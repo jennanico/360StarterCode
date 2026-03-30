@@ -4,7 +4,7 @@ public class App {
 	
     public static void main(String[] args) {
     	
-        ClickCounter.main(args);
+        ClickMe.main(args);
     }
     
 }
