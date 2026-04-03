@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <GridPane prefWidth="600.0" style="-fx-border-radius: 1;" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="456.6666259765625" minWidth="10.0" prefWidth="291.33335367838544" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="456.6666259765625" minWidth="10.0" prefWidth="291.33335367838544" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="318.00000000000006" minWidth="10.0" prefWidth="309.3333129882813" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="39.33333524068196" minHeight="10.0" prefHeight="27.333341598510742" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="43.33332824707031" minHeight="10.0" prefHeight="27.333342234293617" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="37.33332443237304" minHeight="10.0" prefHeight="37.33332443237304" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.0" minHeight="1.0" prefHeight="1.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label style="-fx-border-radius: 1px;" text="Queensland Government Logo" GridPane.columnSpan="2" />
+            <Label prefWidth="115.0" text="Size Utilities" textAlignment="RIGHT" GridPane.columnIndex="2">
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <Label text="Site Name" GridPane.rowIndex="1" />
+            <Label text="Site Branding" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" GridPane.columnIndex="2" />
+            <Separator prefWidth="211.0" GridPane.columnIndex="2" GridPane.valignment="BOTTOM" />
+            <HBox prefHeight="100.0" prefWidth="599.0" GridPane.columnSpan="3" GridPane.rowIndex="2">
+               <children>
+                  <Label text="Site Navigation">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+            <Separator prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+         </children>
+      </GridPane>
+   </top>
+   <left>
+      <GridPane prefHeight="296.0" prefWidth="126.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.99998982747394" minWidth="10.0" prefWidth="111.33334350585938" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.33331298828125" minWidth="7.333333333333329" prefWidth="14.666656494140625" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="112.66665649414062" minHeight="10.0" prefHeight="49.333309173583984" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="167.66669082641602" minHeight="10.0" prefHeight="167.66669082641602" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Section navigation" />
+            <Separator orientation="VERTICAL" prefHeight="200.0" GridPane.columnIndex="1" GridPane.rowSpan="3" />
+         </children>
+      </GridPane>
+   </left>
+   <right>
+      <GridPane prefHeight="284.0" prefWidth="145.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="93.3333740234375" minWidth="8.666625022888184" prefWidth="8.666625022888184" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.00004164377847" minWidth="10.0" prefWidth="192.00004164377847" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="113.33331298828125" minHeight="10.0" prefHeight="91.00002034505208" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="129.0" minHeight="10.0" prefHeight="89.66664632161458" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="156.66664123535156" minHeight="10.0" prefHeight="124.00001525878903" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Separator orientation="VERTICAL" prefHeight="200.0" GridPane.halignment="RIGHT" GridPane.rowSpan="3" />
+            <Label text="Services" GridPane.columnIndex="1" />
+            <Label text="Asides" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Separator prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+         </children>
+      </GridPane>
+   </right>
+   <bottom>
+      <GridPane prefHeight="101.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="62.333343505859375" minHeight="10.0" prefHeight="62.333343505859375" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="46.33331298828125" minHeight="10.0" prefHeight="39.666656494140625" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Fat Footer" />
+            <Label text="Footer" GridPane.rowIndex="1" />
+            <Separator prefWidth="200.0" GridPane.valignment="TOP" />
+            <Separator prefWidth="600.0" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+         </children>
+      </GridPane>
+   </bottom>
+   <center>
+      <Label text="Content" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
