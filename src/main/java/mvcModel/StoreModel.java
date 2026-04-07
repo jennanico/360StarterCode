@@ -31,7 +31,7 @@ public class StoreModel {
 
 	
 	public void deltaMoney(double amt) {
-		money.add(amt);
+		money.set(money.get()+amt);
 	}
 	
 }
