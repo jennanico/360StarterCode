@@ -28,6 +28,7 @@ public class Main extends Application {
 		ViewTransitionModel vm = new ViewTransitionModel(view, model);
 		cont.setModel(vm);
 		
+		vm.showCash();
 		
 		Scene s = new Scene(view);
 		stage.setScene(s);

@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.layout.BorderPane;
 import mvcViews.CashController;
+import mvcViews.GroceryController;
 
 public class ViewTransitionModel implements ViewTransitionModelInterface {
 
@@ -42,6 +43,8 @@ public class ViewTransitionModel implements ViewTransitionModelInterface {
 		try {
 			Node view = loader.load();
 			mainview.setCenter(view);
+			GroceryController cont = loader.getController();
+			cont.setModel(model);
 			
 		} catch (IOException e) {
 			e.printStackTrace();
