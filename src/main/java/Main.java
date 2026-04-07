@@ -3,6 +3,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
+import mvcModel.ViewTransitionModel;
+import mvcViews.MainController;
 
 public class Main extends Application {
 
@@ -11,6 +13,7 @@ public class Main extends Application {
 		launch(args);
 	}
 	
+	
 	@Override
 	public void start(Stage stage) throws Exception {
 		
@@ -18,6 +21,11 @@ public class Main extends Application {
 		loader.setLocation(Main.class.getResource("mvcViews/mainView.fxml"));
 		
 		BorderPane view = loader.load();
+		
+		MainController cont = loader.getController();
+		ViewTransitionModel vm = new ViewTransitionModel(view);
+		cont.setModel(vm);
+		
 		
 		Scene s = new Scene(view);
 		stage.setScene(s);
